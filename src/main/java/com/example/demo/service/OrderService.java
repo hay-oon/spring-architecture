@@ -81,7 +81,7 @@ public class OrderService implements IPurchaseOrderUseCase {
     }
 
     @Override
-    public List<Order> getOrders(Long customerId) {
+    public List<org.springframework.core.annotation.Order> getOrders(Long customerId) {
         return orderRepository.findByCustomerId(customerId);
     }
 
